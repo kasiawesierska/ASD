@@ -2,19 +2,6 @@
 #include<stdlib.h>
 #include<stdio.h>
 
-
-
-//void showTable(int tab[], int size) 
-//{
-//  // WYŚWIETLENIE //
-//	printf("tab = [");
-//	int i;
-//	for (i=0; i<size-1; i++)
-//		printf("%d, ", tab[i]);
-//	printf("%d]\n", tab[size-1]);
-//
-//}
-
 void swap(int* a, int* b) 
 {
     int temp = *a;
@@ -111,7 +98,8 @@ int main()
 	
 	clock_t stop7 = clock();
 	
-	printf("\nSortowanie quicksort tabela losowa:\n"); //showTable(tab, 500);
+	printf("\nSortowanie quicksort tablica losowa:\n"); 
+    showTable(tab, 500);
 	printf( "Czas wykonywania: %lu ms\n", stop7 - start7 );
 
 //Heapsort losowa	
@@ -120,7 +108,7 @@ int main()
 	heapsort(tab, 500);
 	
 	clock_t stop8 = clock();
-	printf("\nSortowanie heapsort tabela losowa:\n"); //showTable(tab, 500);
+	printf("\nSortowanie heapsort tablica losowa:\n"); 
 	printf( "Czas wykonywania: %lu ms\n", stop8 - start8 );
 	
 //Bubble losowa		
@@ -129,7 +117,7 @@ int main()
 	bubblesort(tab,500);
 	
 	clock_t stop9 = clock();
-	printf("\nSortowanie bubblesort tabela losowa:\n"); //showTable(tab, 500);
+	printf("\nSortowanie bubblesort tablica losowa:\n"); 
 	printf( "Czas wykonywania: %lu ms\n", stop9 - start9 );
 
 //Tablica rosnąca
@@ -145,7 +133,7 @@ int main()
 	
 	clock_t stop = clock();
 	
-	printf("\nSortowanie quicksort tabela rosnaca:\n"); //showTable(tab2, 500);
+	printf("\nSortowanie quicksort tablica rosnaca:\n");
 	printf( "Czas wykonywania: %lu ms\n", stop - start );
 
 //Heapsort rosnąca	
@@ -154,7 +142,7 @@ int main()
 	heapsort(tab2, 500);
 	
 	clock_t stop2 = clock();
-	printf("\nSortowanie heapsort tabela rosnaca:\n"); //showTable(tab2, 500);
+	printf("\nSortowanie heapsort tablica rosnaca:\n"); 
 	printf( "Czas wykonywania: %lu ms\n", stop2 - start2 );
 	
 //Bubble rosnąca		
@@ -163,7 +151,7 @@ int main()
 	bubblesort(tab2,500);
 	
 	clock_t stop3 = clock();
-	printf("\nSortowanie bubblesort tabela rosnaca:\n"); //showTable(tab2, 500);
+	printf("\nSortowanie bubblesort tablica rosnaca:\n"); 
 	printf( "Czas wykonywania: %lu ms\n", stop3 - start3 );
 	
 //Tablica odwrotna
@@ -180,7 +168,7 @@ int main()
 	
 	clock_t stop4 = clock();
 	
-	printf("\nSortowanie quicksort tabela odwrotna:\n"); //showTable(tab3, 500);
+	printf("\nSortowanie quicksort tablica odwrotna:\n");
 	printf( "Czas wykonywania: %lu ms\n", stop4 - start4 );
 
 //Heapsort odwrotna	
@@ -189,7 +177,7 @@ int main()
 	heapsort(tab3, 500);
 	
 	clock_t stop5 = clock();
-	printf("\nSortowanie heapsort tabela odwrotna:\n"); //showTable(tab3, 500);
+	printf("\nSortowanie heapsort tablica odwrotna:\n");
 	printf( "Czas wykonywania: %lu ms\n", stop5 - start5 );
 	
 //Bubble odwrotna	
@@ -198,8 +186,6 @@ int main()
 	bubblesort(tab3,500);
 	
 	clock_t stop6 = clock();
-	printf("\nSortowanie bubblesort tabela odwrotna:\n"); //showTable(tab3, 500);
+	printf("\nSortowanie bubblesort tablica odwrotna:\n");
 	printf( "Czas wykonywania: %lu ms\n", stop6 - start6 );
-	
-
 }
